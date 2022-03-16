@@ -1,0 +1,123 @@
+/* 共通部分 */
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+/* 共通部分ここまで */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  width: 72.3px;
+  height: 20.54px;
+  vertical-align: middle;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  color: inherit;
+}
+
+.top-mv {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mv.png) center / cover;
+  color: #fff;
+}
+
+.top-mv-main-copy {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.top-mv-sub-copy {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.black-container {
+  background-color: #222;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.top-future-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.top-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.top-future-text {
+  margin-top: 20px;
+}
+
+.top-service {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.top-service-wrapper {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+}
+
+.top-service-item {
+  width: 49%;
+  margin-top: 20px;
+}
+
+.top-service-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #cd0224;
+  color: #fff;
+}
+
+.top-service-btn {
+  margin: 40px auto 0;
+}
