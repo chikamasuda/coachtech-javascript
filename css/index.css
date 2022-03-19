@@ -1,47 +1,5 @@
-/* 共通部分 */
-body {
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
-    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: 0.3s;
-}
-
-/* 共通部分ここまで */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  padding: 0 30px;
-  background-color: #fff;
-  position: sticky;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-
-.logo {
-  width: 72.3px;
-  height: 20.54px;
-  vertical-align: middle;
-}
-
-.nav-list {
-  display: flex;
-}
-
-.nav-item a {
-  text-decoration: none;
-  margin-left: 30px;
-  font-weight: bold;
-  color: inherit;
-}
-
+@charset "UTF-8";
+/* service.html */
 .top-mv {
   height: 80vh;
   display: flex;
@@ -69,21 +27,12 @@ a {
   padding: 80px 0;
 }
 
-.top-future-wrapper {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.top-title {
-  font-size: 30px;
-  font-weight: bold;
-}
-
 .top-future-text {
   margin-top: 20px;
 }
 
-.top-service {
+.top-service,
+.top-blog {
   padding: 80px 0;
   text-align: center;
 }
@@ -103,21 +52,251 @@ a {
   margin-top: 20px;
 }
 
-.top-service-text {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.btn {
-  display: block;
-  width: 300px;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  background-color: #cd0224;
-  color: #fff;
-}
-
-.top-service-btn {
+.btn-margin {
   margin: 40px auto 0;
+}
+
+.top-news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-news-btn {
+  width: 160px;
+  font-size: 14px;
+  padding: 7px;
+}
+
+.top-news-list {
+  margin-top: 20px;
+}
+
+.top-news-item-link {
+  background-color: #fff;
+  display: flex;
+  color: #222;
+  padding: 20px;
+}
+
+.top-news-item-time {
+  margin-right: 10px;
+}
+
+.top-news-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.blog-list {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+}
+
+.blog-item {
+  width: 32%;
+  margin-top: 20px;
+}
+
+.blog-item-date {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.top-company-list {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 80px;
+}
+
+.top-company-item,
+.top-recruit-item {
+  width: 50%;
+}
+
+.top-company-link {
+  line-height: 10;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #cd0224;
+}
+
+.top-recruit-link {
+  line-height: 10;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #222;
+}
+
+/* service.html */
+.service-item {
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-item-img {
+  width: 290px;
+}
+
+.service-item-detail {
+  width: calc(100% - 330px);
+}
+
+.service-item-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.service-item:last-child {
+  border-bottom: 1px solid #222;
+}
+
+/* news.html */
+.news-item-link {
+  border: 1px solid #222;
+  display: flex;
+  color: #222;
+  padding: 20px;
+}
+
+.news-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.news-item-time {
+  margin-right: 10px;
+}
+
+/* company.html */
+.company-info {
+  width: 100%;
+  border-bottom: 1px solid #222;
+}
+
+.company-info-name,
+.company-info-data {
+  padding: 20px 0;
+  border-top: 1px solid #222;
+}
+
+.company-info-name {
+  width: 30%;
+}
+
+.company-info-data {
+  width: 70%;
+}
+
+/* recruit.html */
+.recruit-title {
+  font-size: 26px;
+  font-weight: bold;
+  border-bottom: 1px solid #222;
+}
+
+.recruit-description {
+  margin: 20px 0;
+}
+
+.recruit-table {
+  width: 100%;
+}
+
+.recruit-table-title,
+.recruit-table-data {
+  padding: 10px;
+  border: 1px solid #222;
+}
+
+.recruit-table-title {
+  background-color: #f5f6f9;
+  width: 30%;
+}
+
+.recruit-table-data {
+  width: 70%;
+}
+
+.mid-career-section {
+  margin-top: 80px;
+}
+
+/* contact.html */
+.contact-form {
+  width: 100%;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.contact-form-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.contact-form-item-input,
+.contact-form-item-textarea {
+  margin-top: 5px;
+  font-size: 16px;
+  width: 100%;
+  padding: 5px 0;
+  border: 1px solid #ccc;
+}
+
+.contact-btn {
+  background-color: #222;
+  border: none;
+  margin: 20px auto 0;
+  cursor: pointer;
+}
+
+.contact-span {
+  margin-left: 5px;
+  color: #cd0224;
+}
+
+@media screen and (max-width: 768px) {
+  .top-news-item-link {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .top-service-item {
+    width: 100%;
+  }
+
+  .top-blog-item {
+    width: 100%;
+  }
+
+  .service-item-detail {
+    width: 100%;
+  }
+
+  .service-item-img {
+    width: 100%;
+  }
+
+  .news-item-link {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .container-s {
+    width: 90%;
+  }
 }
